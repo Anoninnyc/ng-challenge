@@ -1,4 +1,4 @@
-myApp = angular.module('myApp', ['ngRoute']);
+myApp = angular.module('myApp', [ ]);
 
 require('./source/services/infoService.js');
 require('./source/services/toggleService.js');
