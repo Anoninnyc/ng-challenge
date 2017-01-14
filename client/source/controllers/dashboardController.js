@@ -1,5 +1,4 @@
 myApp.controller('dashboard', function($scope, infoService, toggleService) {
-
   $scope.programs = infoService.programs;
   // zoom in
   $scope.filter = index => toggleService.filter(index);

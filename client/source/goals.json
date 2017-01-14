@@ -1,4 +1,4 @@
- module.exports ={
+ module.exports = {
   "goals": [
     {
       "guid": "49db5fada530b1a139d92166b7d7ff53",
@@ -136,4 +136,4 @@
       "incentive_value": 100
     }
   ]
-}
+};

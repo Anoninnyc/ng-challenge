@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	myApp = angular.module('myApp', ['ngRoute']);
+	myApp = angular.module('myApp', [ ]);
 
 	__webpack_require__(1);
 	__webpack_require__(4);
@@ -61,7 +61,6 @@
 	const goals = __webpack_require__(3);
 
 	myApp.service('infoService', function() {
-
 	  this.ids = programs.program_blueprints.map(program => program.display_type);
 	  this.filtered = false;
 	  this.specificApp = null;
@@ -78,14 +77,14 @@
 	    const matching = [];
 	    const programGoals = this.programs[this.specificApp].goals;
 	    let total = 0;
-
+	  //iterate!
 	    programGoals.forEach(goal => {
 	      let index = this.goalGUIDS.indexOf(goal.guid);
 	      if (index > -1) {
 	        matching.push(goals[index]);
 	      }
 	    });
-
+	    //incentives...
 	    total = matching.map(goal => goal.incentive_value).reduce((a, b) => a + b, 0);
 	    return [matching, total];
 	  };
@@ -351,7 +350,7 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	 module.exports ={
+	 module.exports = {
 	  "goals": [
 	    {
 	      "guid": "49db5fada530b1a139d92166b7d7ff53",
@@ -489,7 +488,7 @@
 	      "incentive_value": 100
 	    }
 	  ]
-	}
+	};
 
 /***/ },
 /* 4 */
@@ -511,7 +510,6 @@
 /***/ function(module, exports) {
 
 	myApp.controller('dashboard', function($scope, infoService, toggleService) {
-
 	  $scope.programs = infoService.programs;
 	  // zoom in
 	  $scope.filter = index => toggleService.filter(index);
