@@ -88,7 +88,6 @@
 	    total = matching.map(goal => goal.incentive_value).reduce((a, b) => a + b, 0);
 	    return [matching, total];
 	  };
-
 	});
 
 
