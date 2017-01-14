@@ -1,0 +1,22 @@
+<div ng-controller="details">
+  <div ng-init="program=getInfo()[1]; goals=getGoals()[0]" ngClass="programDetails {{program.display_type}}" ng-if="getInfo()[0]">
+    <div class='backRibbon' ng-click="back()"> 
+      <span id="goBack">
+        <img src="http://www.freeiconspng.com/uploads/left-arrow-9.png" />
+          &nbsp Back
+       </span>
+     </div>
+    <img ng-src=".././public/images/{{program.display_type}}.png" />
+    <p id="detailsTitle"> {{program.title}} </p>
+    <p id="hook">{{program.possible_earnings_description}}</p>
+    <p id="description">{{program.description}}</p>
+    <pre id="incentives">{{program.incentive_description}}</pre>
+    <p ng-if="goals.length" id="goalsHeading">Goals</p>
+    <div ng-repeat="goal in goals" class="goal">
+      <p id="goalTitle">Title:{{goal.title}}</p>
+      <p id="goalDescription">Description:{{goal.description}}</p>
+      <p id="goalIncentive">Incentive:{{goal.incentive_value}}</p>
+    </div>
+    <p class="total" ng-if="getGoals()[1]">{{"Total: "+getGoals()[1]}}</p>
+  </div>
+</div>

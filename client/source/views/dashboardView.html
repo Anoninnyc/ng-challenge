@@ -1,0 +1,13 @@
+<div ng-controller="dashboard">
+  <div ng-if='!getFiltered()'>
+    <img id="Jiff" ng-src=".././public/images/JIFF.png" />
+    <div class="flex-container">
+      <div class="repeat" ng-repeat="program in programs | orderBy: 'display_order' ">
+        <div id={{program.display_type}} class="flex-item" ng-click="filter(program.display_type)">
+          <img ng-src=".././public/images/{{program.display_type}}.png" />
+          <p id="programTitle">{{program.title}}</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

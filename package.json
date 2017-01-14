@@ -1,0 +1,16 @@
+{
+  "name": "Challenge",
+  "version": "1.0.0",
+  "author": "Krishan Arya",
+  "license": "None",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "back-end": "nodemon server.js"
+  },
+  "dev-dependencies": {
+    "webpack": "^1.13.2"
+  }
+}

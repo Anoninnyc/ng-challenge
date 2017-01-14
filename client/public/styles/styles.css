@@ -1,0 +1,137 @@
+#Jiff,
+#goBack>img,
+.backRibbon,
+.flex-container,
+.repeat {
+  position: relative;
+}
+
+body {
+  background-color: #a9a9a9;
+  text-align: center;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  bottom: 3em;
+}
+
+.flex-item {
+  margin: 1em;
+}
+
+img {
+  width: 23em;
+}
+
+.backRibbon {
+  background-image: url(../images/top.png);
+  height: 10em;
+  width: 100%;
+  margin: none;
+  text-align: left;
+}
+
+#detailsTitle {
+  font: 5em Arial, Times, serif;
+}
+
+#goBack {
+  font: 5em Fantasy, Times, serif;
+  position: absolute;
+}
+#description {
+
+  font: 3em arial;
+  margin-bottom: .7em;
+}
+
+#incentives {
+  font-size: 1em;
+  font-style: italic;
+  margin: 1em;
+  font-weight: 700;
+}
+
+body,
+html,
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+#programTitle {
+  font-size: 1.8em;
+}
+
+#steps #incentives {
+  font-size: 1em margin: .5em;
+}
+
+#goalsHeading {
+  font: 6em Fantasy, Times, Serif;
+}
+
+#goalTitle {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.repeat {
+  left: 10.5%
+}
+
+.programDetails {
+  color: #fff;
+}
+
+#goBack>img {
+  width: 1.5em;
+  height: 1.5em;
+  top: .3em;
+}
+
+#Jiff {
+  height: 20em;
+  width: 30em;
+  left: 2.5em;
+}
+
+.backRibbon+img {
+  margin: 2em;
+}
+
+#goalsHeading {
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.total {
+  font-size: 3em;
+  font-family: Fantasy, Serif;
+  margin-top: .4em;
+  margin-bottom: .4em;
+}
+
+#hook {
+  font-size: 4em;
+  font-family: Arial, Times, serif;
+  font-weight: 700;
+  margin-bottom: .7em;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.goal {
+  margin-bottom: 1em;
+}
